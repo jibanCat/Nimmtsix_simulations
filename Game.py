@@ -12,13 +12,14 @@ def main(args):
     all_cards = list(map(lambda x: x + 1, range(104)))
     items = dict((alph, []) for alph in string.ascii_lowercase[:4])
 
+    # random shuffle and take you subsets of the cards
+    random.shuffle(all_cards)    
+    
     # put cards on the table
     for i,name in enumerate(items.keys()):
         items[name].append(all_cards[-i - 1])
     table = Table(items)
 
-    # random shuffle and take you subsets of the cards
-    random.shuffle(all_cards)
     players = {}
     for i,name in enumerate(['p' + str(i+1).zfill(2) for i in range(num_of_players)]):
         if i==0:

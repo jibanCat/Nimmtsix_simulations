@@ -13,8 +13,8 @@ python Game -n 4
 ```
 
 # Edit the strategy:
-- In `Player.py` you can edit the strategy of playing game for computers. Default is `random.randint`.
-- In `Player_user.py` you can edit the strategy of playing game for yourself (`p01`). Default is inserting by your hands.
+- For Class `Player` in `Player.py` you can edit the strategy of playing game for computers. Default is `random.randint`.
+- In Class `Player_user` you can edit the strategy of playing game for yourself (`p01`). Default is inserting by your hands.
 
 # Future:
 - Make main function `Game.py` prettier with self-defined user name.
